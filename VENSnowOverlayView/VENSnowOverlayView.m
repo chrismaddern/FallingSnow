@@ -47,7 +47,7 @@
     fallAnimation.repeatCount       = 1e100;
     fallAnimation.autoreverses      = NO;
 	
-	for (UIImageView *flake in self.flakesArray) {
+    for (UIImageView *flake in self.flakesArray) {
         CGPoint flakeStartPoint     = flake.center;
         float flakeStartY           = flakeStartPoint.y;
         float flakeEndY             = self.frame.size.height;
@@ -86,8 +86,8 @@
         srandomdev();
         self.flakesArray = [[NSMutableArray alloc] initWithCapacity:self.flakesCount];
         UIImage *flakeImg = [UIImage imageNamed:self.flakeFileName];
+        
         for (int i=0; i < self.flakesCount; i++) {
-            
             // Randomize Flake size
             float flakeScale = ((Float32)1.0*(Float32)random()/(Float32)RAND_MAX);
             
