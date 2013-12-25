@@ -4,7 +4,7 @@ A snowy UIView overlay to make your apps Christmassy!
 <img src="http://chris.cm/wp-content/uploads/2013/12/snow_side.png" align="center" alt="" width="200"/>
 
 ### Installation
-The pod is currently pending pull-requesting.. should be available soon.
+The easiest way is to use CocoaPods. If you don't already, here's a [guide](http://guides.cocoapods.org/using/getting-started.html).
 ```
 pod 'VENSnowOverlayView', '~>0.1.0'
 ```
