@@ -1,6 +1,8 @@
 ## VENSnowOverlayView
 A snowy UIView overlay to make your apps Christmassy!
 
+<img src="http://chris.cm/wp-content/uploads/2013/12/snow_side.png" align="center" alt="" width="200"/>
+
 ### Installation
 The pod is currently pending pull-requesting.. should be available soon.
 ```
