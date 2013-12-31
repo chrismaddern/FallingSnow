@@ -17,8 +17,9 @@
 
 - (id)initWithFrame:(CGRect)frame {
     if ((self = [super initWithFrame:frame])) {
-        self.clipsToBounds        = YES;
-        self.backgroundColor      = [UIColor clearColor];
+        self.clipsToBounds          = YES;
+        self.backgroundColor        = [UIColor clearColor];
+        self.userInteractionEnabled = NO;
 
         // Set default values
         self.flakesCount          = kDefaultFlakesCount;
