@@ -1,5 +1,5 @@
-## VENSnowOverlayView
-A snowy UIView overlay to make your apps Christmassy!
+## FallingSnow
+Make your app snow with just a line of code!
 
 <img src="http://chris.cm/wp-content/uploads/2013/12/snow_side.png" align="center" alt="" width="200"/>
 
