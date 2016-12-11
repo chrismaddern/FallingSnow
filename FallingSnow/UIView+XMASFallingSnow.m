@@ -1,6 +1,7 @@
 #import "UIView+XMASFallingSnow.h"
 #import "XMASFallingSnowView.h"
 #import <objc/runtime.h>
+#import <QuartzCore/QuartzCore.h>
 
 @implementation UIView (XMASFallingSnow)
 
@@ -10,6 +11,7 @@
     }
     XMASFallingSnowView *snowView = [[XMASFallingSnowView alloc] initWithFrame:self.frame];
     [self addSubview:snowView];
+    snowView.layer.zPosition = MAXFLOAT;
     [snowView beginSnowAnimation];
     [self setSnowView:snowView];
 }

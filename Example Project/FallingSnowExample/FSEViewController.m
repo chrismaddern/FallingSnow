@@ -14,7 +14,6 @@
 //    XMASFallingSnowView *snowOverlay = [[XMASFallingSnowView alloc] initWithFrame:self.view.frame];
 //    [self.view addSubview:snowOverlay];
 //    [snowOverlay beginSnowAnimation];
-    [self.view makeItSnow];
 }
 
 @end
