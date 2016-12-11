@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 
-@interface XMASFallingSnow : UIView
+@interface XMASFallingSnowView : UIView
 
 @property (nonatomic, retain) NSMutableArray *flakesArray;
 @property (nonatomic, retain) NSString *flakeFileName;

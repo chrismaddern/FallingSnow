@@ -1,4 +1,4 @@
-#import "XMASFallingSnow.h"
+#import "XMASFallingSnowView.h"
 #import <QuartzCore/QuartzCore.h>
 #import <float.h>
 #import <math.h>
@@ -13,7 +13,7 @@
 #define kDefaultAnimationDurationMin 6.0
 #define kDefaultAnimationDurationMax 12.0
 
-@implementation XMASFallingSnow
+@implementation XMASFallingSnowView
 
 - (id)initWithFrame:(CGRect)frame {
     if ((self = [super initWithFrame:frame])) {

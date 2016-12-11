@@ -1,5 +1,6 @@
 #import "FSEViewController.h"
-#import "XMASFallingSnow.h"
+#import "XMASFallingSnowView.h"
+#import "FallingSnow.h"
 
 @interface FSEViewController ()
 
@@ -10,9 +11,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    XMASFallingSnow *snowOverlay = [[XMASFallingSnow alloc] initWithFrame:self.view.frame];
-    [self.view addSubview:snowOverlay];
-    [snowOverlay beginSnowAnimation];
+//    XMASFallingSnowView *snowOverlay = [[XMASFallingSnowView alloc] initWithFrame:self.view.frame];
+//    [self.view addSubview:snowOverlay];
+//    [snowOverlay beginSnowAnimation];
+    [self.view makeItSnow];
 }
 
 @end

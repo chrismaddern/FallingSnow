@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		836452851DFDC26200A80566 /* UIView+XMASFallingSnow.m in Sources */ = {isa = PBXBuildFile; fileRef = 836452841DFDC26200A80566 /* UIView+XMASFallingSnow.m */; };
 		C2DB073B186A71C9000E45A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB073A186A71C9000E45A8 /* Foundation.framework */; };
 		C2DB073D186A71C9000E45A8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB073C186A71C9000E45A8 /* CoreGraphics.framework */; };
 		C2DB073F186A71C9000E45A8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DB073E186A71C9000E45A8 /* UIKit.framework */; };
@@ -17,10 +18,13 @@
 		C2DB0751186A71C9000E45A8 /* FSEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB0750186A71C9000E45A8 /* FSEViewController.m */; };
 		C2DB0753186A71C9000E45A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2DB0752186A71C9000E45A8 /* Images.xcassets */; };
 		C2DB0774186A71F3000E45A8 /* XMASSnowflake.png in Resources */ = {isa = PBXBuildFile; fileRef = C2DB0771186A71F3000E45A8 /* XMASSnowflake.png */; };
-		C2DB0775186A71F3000E45A8 /* XMASFallingSnow.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB0773186A71F3000E45A8 /* XMASFallingSnow.m */; };
+		C2DB0775186A71F3000E45A8 /* XMASFallingSnowView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2DB0773186A71F3000E45A8 /* XMASFallingSnowView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		836452821DFDC21E00A80566 /* FallingSnow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FallingSnow.h; sourceTree = "<group>"; };
+		836452831DFDC26200A80566 /* UIView+XMASFallingSnow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XMASFallingSnow.h"; sourceTree = "<group>"; };
+		836452841DFDC26200A80566 /* UIView+XMASFallingSnow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XMASFallingSnow.m"; sourceTree = "<group>"; };
 		C2DB0737186A71C9000E45A8 /* FallingSnowExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FallingSnowExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DB073A186A71C9000E45A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C2DB073C186A71C9000E45A8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -37,8 +41,8 @@
 		C2DB0752186A71C9000E45A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C2DB0759186A71C9000E45A8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C2DB0771186A71F3000E45A8 /* XMASSnowflake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XMASSnowflake.png; sourceTree = "<group>"; };
-		C2DB0772186A71F3000E45A8 /* XMASFallingSnow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMASFallingSnow.h; sourceTree = "<group>"; };
-		C2DB0773186A71F3000E45A8 /* XMASFallingSnow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMASFallingSnow.m; sourceTree = "<group>"; };
+		C2DB0772186A71F3000E45A8 /* XMASFallingSnowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMASFallingSnowView.h; sourceTree = "<group>"; };
+		C2DB0773186A71F3000E45A8 /* XMASFallingSnowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMASFallingSnowView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +117,11 @@
 			isa = PBXGroup;
 			children = (
 				C2DB0770186A71F3000E45A8 /* Resources */,
-				C2DB0772186A71F3000E45A8 /* XMASFallingSnow.h */,
-				C2DB0773186A71F3000E45A8 /* XMASFallingSnow.m */,
+				C2DB0772186A71F3000E45A8 /* XMASFallingSnowView.h */,
+				C2DB0773186A71F3000E45A8 /* XMASFallingSnowView.m */,
+				836452821DFDC21E00A80566 /* FallingSnow.h */,
+				836452831DFDC26200A80566 /* UIView+XMASFallingSnow.h */,
+				836452841DFDC26200A80566 /* UIView+XMASFallingSnow.m */,
 			);
 			name = FallingSnow;
 			path = ../../FallingSnow;
@@ -154,12 +161,12 @@
 		C2DB072F186A71C9000E45A8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = VEN;
+				CLASSPREFIX = XMAS;
 				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = Venmo;
+				ORGANIZATIONNAME = "Chris Maddern";
 			};
 			buildConfigurationList = C2DB0732186A71C9000E45A8 /* Build configuration list for PBXProject "FallingSnowExample" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -195,7 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2DB0775186A71F3000E45A8 /* XMASFallingSnow.m in Sources */,
+				836452851DFDC26200A80566 /* UIView+XMASFallingSnow.m in Sources */,
+				C2DB0775186A71F3000E45A8 /* XMASFallingSnowView.m in Sources */,
 				C2DB0751186A71C9000E45A8 /* FSEViewController.m in Sources */,
 				C2DB074B186A71C9000E45A8 /* FSEAppDelegate.m in Sources */,
 				C2DB0747186A71C9000E45A8 /* main.m in Sources */,
@@ -310,10 +318,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FallingSnowExample/FallingSnowExample-Prefix.pch";
 				INFOPLIST_FILE = "FallingSnowExample/FallingSnowExample-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.venmo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = cm.wtf.FallingSnowExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -324,10 +333,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FallingSnowExample/FallingSnowExample-Prefix.pch";
 				INFOPLIST_FILE = "FallingSnowExample/FallingSnowExample-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.venmo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = cm.wtf.FallingSnowExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
