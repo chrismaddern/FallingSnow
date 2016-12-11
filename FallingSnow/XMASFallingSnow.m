@@ -1,4 +1,4 @@
-#import "VENSnowOverlayView.h"
+#import "XMASFallingSnow.h"
 #import <QuartzCore/QuartzCore.h>
 #import <float.h>
 #import <math.h>
@@ -8,12 +8,12 @@
 #define kDefaultFlakesCount 160
 #define kDefaultFlakeWidth 20.0
 #define kDefaultFlakeHeight 23.0
-#define kDefaultFlakeFileName @"VENSnowflake.png"
+#define kDefaultFlakeFileName @"XMASSnowflake.png"
 #define kDefaultMinimumSize 0.4
 #define kDefaultAnimationDurationMin 6.0
 #define kDefaultAnimationDurationMax 12.0
 
-@implementation VENSnowOverlayView
+@implementation XMASFallingSnow
 
 - (id)initWithFrame:(CGRect)frame {
     if ((self = [super initWithFrame:frame])) {
