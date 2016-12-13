@@ -1,19 +1,25 @@
-## FallingSnow
+## Falling Snow
 Make your app snow with just a line of code!
 
-<img src="http://chris.cm/wp-content/uploads/2013/12/snow_side.png" align="center" alt="" width="200"/>
+<img src="https://cloud.githubusercontent.com/assets/1068437/21128029/884b5860-c0c5-11e6-8c50-2343f3b8b48d.gif" align="center" alt="" width="200"/>
 
 ### Installation
 The easiest way is to use CocoaPods. If you don't already, here's a [guide](http://guides.cocoapods.org/using/getting-started.html).
 ```
-pod 'VENSnowOverlayView', '~>0.1.0'
+pod 'FallingSnow', '~>1.0.0'
 ```
 
 ### Usage
+To make your whole App snow, in your `AppDelegate`:
+
 ```objc
-VENSnowOverlayView *snowOverlay = [[VENSnowOverlayView alloc] initWithFrame:self.view.frame];
-[self.view addSubview:snowOverlay];
-[snowOverlay beginSnowAnimation];
+[self.window makeItSnow];
+```
+
+To make any particular view snow:
+
+```objc
+[myView makeItSnow];
 ```
 
 ### Contributing
